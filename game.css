@@ -1,1 +1,12 @@
-/*Only use this file if you want to override bootstrap or create your own style*/
+body {
+  background-color: darkgray;
+}
+
+.large {
+  min-width: 200px;
+}
+
+.small {
+  width: 100px;
+  height: 100px;
+}

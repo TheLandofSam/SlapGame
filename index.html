@@ -1,12 +1,56 @@
 <html>
+
 <head>
 	<title>Slap Object Game</title>
-	<link rel="stylesheet" href="">
-	<link rel="stylesheet" href="">
 	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
+	 <link rel="stylesheet" href="game.css">
+	<h1>Grow a Flower</h1>
 </head>
+
 <body>
-	
-	<script src=""></script>
+
+	<div class="container-fluid bkgd-gray">
+
+		<div class="row">
+			<div class="col-md-2"></div>
+			
+			<div class="col-md-8"><h2 id="zombiemessage"></h2><img class="large" id="flower-pic" src="https://img.clipartfest.com/90fa5c2e66c8890ad47dcdfda949ab51_because-animated-flowers-growing_1000-447.jpeg"
+				 alt="Grow a Flower"></div>
+			<div class="col-md-2"></div>
+			
+			
+			
+			
+			
+			
+		</div>
+ </div>
+
+	<div class="container-fluid">
+
+			<div  class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-1"><button class="button" onclick="water()"><img class="small" src="https://img.clipartfest.com/0ae563a7f7f0d8bc0349babab96ea453_gardening-clipart-image-clip-garden-watering-can-clipart_264-300.jpeg" alt="Water"></button></div>
+				<div class="col-md-1"><button class="button" onclick="sun()"><img class="small" src="http://efdreams.com/data_images/dreams/sun/sun-05.jpg" alt="Sun"></button></div>
+				<div class="col-md-1"><button class="button" onclick="fertilizer()"><img class="small" src="https://img.clipartfest.com/2227226b266ab40c10f1d9167f7138c0_fertilizer-bag-fertilizer-bag-clipart_200-200.jpeg" alt="Fertilizer"></button></div>
+				<div class="col-md-1"><button class="button" onclick="potion()"><img class="small" src="http://www.clipartkid.com/images/160/cartoon-magic-potion-clipart-graphic-FI26GL-clipart.jpg" alt="Magic Potion"></button></div>
+				<div class="col-md-1"></div>
+				<div class="col-md-1"><button class="button" onclick="newFlower()"><h4>Plant another flower...</h4></button></div>
+				<div class="col-md-6">
+					<h3 id="flowerGrowth">0</h>
+				</div>
+				
+			</div>
+
+	</div>
+
+
+
+	<script src="game.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	 crossorigin="anonymous"></script>
 </body>
+
 </html>
