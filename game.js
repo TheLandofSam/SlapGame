@@ -56,8 +56,8 @@ function potion() {
 }
 
 function newFlower() {
-  health = 0;
-  currentStage = 0;
+  flower.health = 0;
+  //currentStage = 0;
   flowerManager()
 }
 
