@@ -5,46 +5,80 @@
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
 	 crossorigin="anonymous">
+	 <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Freckle+Face" rel="stylesheet">
 	 <link rel="stylesheet" href="game.css">
-	<h1>Grow a Flower</h1>
+	<h1 class="flowery heading">Grow a Flower: Can you grow a Blue Ribbon flower?</h1>
 </head>
 
 <body>
-
 	<div class="container-fluid bkgd-gray">
-
 		<div class="row">
-			<div class="col-md-2"></div>
-			
-			<div class="col-md-8"><h2 id="zombiemessage"></h2><img class="large" id="flower-pic" src="https://img.clipartfest.com/90fa5c2e66c8890ad47dcdfda949ab51_because-animated-flowers-growing_1000-447.jpeg"
-				 alt="Grow a Flower"></div>
-			<div class="col-md-2"></div>
-			
-			
-			
-			
-			
-			
+			<div class="col-md-4">
+				<div class"row">
+					<h2 class="Flowery"> Give your flower water, sunshine, fertilizer, and potions to help it grow.</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-1"></div>
+					<div class="col-md-3"><button class="button" onclick="app.controllers.flowerController.giveItem('water')"><img class="small" src="https://img.clipartfest.com/0ae563a7f7f0d8bc0349babab96ea453_gardening-clipart-image-clip-garden-watering-can-clipart_264-300.jpeg" alt="Water"></button>
+					</div>
+					<div class="col-md-3"><button class="button" onclick="app.controllers.flowerController.giveItem('sun')"><img class="small" src="http://efdreams.com/data_images/dreams/sun/sun-05.jpg" alt="Sun"></button>
+					</div>
+					<div class="col-md-3"><button class="button" onclick="app.controllers.flowerController.giveItem('fertilizer')"><img class="small" src="https://img.clipartfest.com/2227226b266ab40c10f1d9167f7138c0_fertilizer-bag-fertilizer-bag-clipart_200-200.jpeg" alt="Fertilizer"></button>
+					</div>
+					<div class="col-md-2">
+					<h3 id="flowerGrowth" class="Flowery">Flower's Health: 0</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-1"></div>
+					<div class="col-md-3">
+						<button class="button" onclick="app.controllers.flowerController.giveItem('potionRed')"><img class="small" src="http://vignette3.wikia.nocookie.net/herebemonsters/images/f/f6/Revive_potion.png/revision/latest?cb=20130728134847" alt="Magic Potion"></button>
+						<!--potion here-->
+					</div>
+					<div class="col-md-3">
+						<button class="button" onclick="app.controllers.flowerController.giveItem('potionYelGrn')"><img class="small" src="http://vignette2.wikia.nocookie.net/dofus/images/f/f3/Gutrot_Potion.png/revision/latest?cb=20110412141407" alt="Magic Potion"></button>
+						<!--potion here-->
+					</div>
+					<div class="col-md-3"><button class="button" onclick="app.controllers.flowerController.giveItem('potionStar')"><img class="small" src="http://www.clipartkid.com/images/160/cartoon-magic-potion-clipart-graphic-FI26GL-clipart.jpg" alt="Magic Potion"></button>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-1"></div>
+					<div class="col-md-3">
+						<button class="button" onclick="app.controllers.flowerController.giveItem('potionSkull')"><img class="small" src="http://static.wixstatic.com/media/8a44f4_e6d11333307041df9466205e429983f7.jpg_srz_1500_1456_85_22_0.50_1.20_0.00_jpg_srz" alt="Magic Potion"></button>
+						<!--potion here-->
+					</div>
+					<div class="col-md-3">
+						<button class="button" onclick="app.controllers.flowerController.giveItem('potionBlack')"><img class="small" src="http://images.cdn3.stockunlimited.net/clipart/magic-potion_1533161.jpg" alt="Magic Potion"></button>
+						<!--potion here-->
+					</div>
+					<div class="col-md-3"><button class="button" onclick="app.controllers.flowerController.giveItem('potionBlue')"><img class="small" src="http://i44.photobucket.com/albums/f3/suhmantha/canstock28277063_zpstnmex128.jpg?t=1494451518" alt="Magic Potion"></button>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-1"></div>
+					<div class="col-md-3">
+						<button class="button" onclick="app.controllers.flowerController.giveItem('potionNote')"><img class="small" src="http://images.clipartlogo.com/files/istock/thumbs/4427/44270602-cartoon-letter-in-a-bottle.jpg" alt="Read to your flower."></button>
+						<!--potion here-->
+					</div>
+					<div class="col-md-3">
+						<button class="button" onclick="app.controllers.flowerController.giveItem('potionSnakeOil')"><img class="small" src="http://i44.photobucket.com/albums/f3/suhmantha/1197707-Cartoon-Of-A-Bottle-Of-Snake-Oil-Potion-Royalty-Free-Vector-Illustration_zpswohdbi8b.jpg?t=1494450381"></button>
+						<!--potion here-->
+					</div>
+					<div class="col-md-3"><button class="button small" onclick="app.controllers.flowerController.newFlower()"><h4 class="Flowery">Plant a new flower...</h4></button>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+			</div>
+
+			<div class="col-md-8"><h2 id="zombie-message" class="zombie-message"></h2><img class="large" id="flower-pic" src="https://img.clipartfest.com/90fa5c2e66c8890ad47dcdfda949ab51_because-animated-flowers-growing_1000-447.jpeg"
+				 alt="Grow a Flower">
+			</div>
 		</div>
  </div>
 
-	<div class="container-fluid">
-
-			<div  class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-1"><button class="button" onclick="app.controllers.flowerController.water()"><img class="small" src="https://img.clipartfest.com/0ae563a7f7f0d8bc0349babab96ea453_gardening-clipart-image-clip-garden-watering-can-clipart_264-300.jpeg" alt="Water"></button></div>
-				<div class="col-md-1"><button class="button" onclick="app.controllers.flowerController.sun()"><img class="small" src="http://efdreams.com/data_images/dreams/sun/sun-05.jpg" alt="Sun"></button></div>
-				<div class="col-md-1"><button class="button" onclick="app.controllers.flowerController.fertilizer()"><img class="small" src="https://img.clipartfest.com/2227226b266ab40c10f1d9167f7138c0_fertilizer-bag-fertilizer-bag-clipart_200-200.jpeg" alt="Fertilizer"></button></div>
-				<div class="col-md-1"><button class="button" onclick="app.controllers.flowerController.potion()"><img class="small" src="http://www.clipartkid.com/images/160/cartoon-magic-potion-clipart-graphic-FI26GL-clipart.jpg" alt="Magic Potion"></button></div>
-				<div class="col-md-1"></div>
-				<div class="col-md-1"><button class="button" onclick="app.controllers.flowerController.newFlower()"><h4>Plant another flower...</h4></button></div>
-				<div class="col-md-6">
-					<h3 id="flowerGrowth">0</h>
-				</div>
-				
-			</div>
-
-	</div>
 
 
 

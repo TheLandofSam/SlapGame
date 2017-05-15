@@ -10,3 +10,17 @@ body {
   width: 100px;
   height: 100px;
 }
+
+.heading {
+  font-size: 70px
+
+}
+
+.flowery{
+
+font-family: 'Dancing Script', cursive;
+}
+
+.zombie-message {
+  font-family: 'Freckle Face', cursive;
+}

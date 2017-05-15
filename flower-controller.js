@@ -9,43 +9,22 @@ function FlowerController() {
     //controller
 
     if(flower.currentStage == 7){
-        document.getElementById('zombiemessage').innerHTML = "Your flower was tasty."
+        document.getElementById('zombie-message').innerHTML = "Your flower was tasty."
     }else{
-        document.getElementById('zombiemessage').innerHTML = ""      
+        document.getElementById('zombie-message').innerHTML = ""      
     }
 
     flowerGrowth.innerHTML = "Flower Health " + flower.health
     flowerPic.src = flower.stages[flower.currentStage]
   }
 
-  this.water = function water() {
-    //stay in controller
-    service.give("water")
+  this.giveItem = function(type){
+    service.give(type)
     update()
   }
-  this.sun = function sun() {
-    // flower.health += 5
-    service.give("sun")
+  this.newFlower = function(){
+    service.reset()
     update()
   }
-
-  this.fertilizer = function fertilizer() {
-    // flower.health += 10
-    service.give("fertilizer")
-    update()
-  }
-
-  this.potion = function potion() {
-    //flower.health += 30
-    service.give("potion")
-    update()
-  }
-
-  this.newFlower = function newFlower() {
-    // flower.health = 0;
-    service.give("reset")
-    update()
-  }
-
 
 }
