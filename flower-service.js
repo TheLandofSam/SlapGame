@@ -13,6 +13,7 @@ function FlowerService() {
     this.health = 0,
     this.stages = ["http://i44.photobucket.com/albums/f3/suhmantha/Grow-a-flower0B_zpsfdfvicy1.jpeg", "http://i44.photobucket.com/albums/f3/suhmantha/Grow-a-flower1B_zps79rk23od.jpeg", "http://i44.photobucket.com/albums/f3/suhmantha/Grow-a-flower2B_zpsvyhxxhsi.jpeg", "http://i44.photobucket.com/albums/f3/suhmantha/Grow-a-flower3B_zpskeoktwlj.jpeg", "http://i44.photobucket.com/albums/f3/suhmantha/Grow-a-flower4B_zpsvdh78pyu.jpeg", "http://i44.photobucket.com/albums/f3/suhmantha/Grow-a-flower5_zpsbnhte7ca.jpeg", "http://i44.photobucket.com/albums/f3/suhmantha/Grow-a-flower6_zpsnnzarjoo.jpeg", "http://i44.photobucket.com/albums/f3/suhmantha/zombie18_zpszjqlgzpp.png", "http://i44.photobucket.com/albums/f3/suhmantha/GameOver_zps2vd4mynk.jpg", "http://i44.photobucket.com/albums/f3/suhmantha/d23088a6ac59591719725083951cd673_1st-place-blue-ribbon-clipart-blue-ribbon-clip-art_650-1171_zpsqopjdykl.png"],
     this.currentStage = 0
+    //array: this.tools = [], update every time you are going to update the health, check tool array first and account for item.
     
   } ////!!!This code was pushed before begining the transistion to a Flower constructor.
 
@@ -65,7 +66,7 @@ function FlowerService() {
       flower.currentStage = 8
       flower.health = -14
     }
-    //debugger
+    
     if(type == "sun"){
       sunClicks += 1
     }
