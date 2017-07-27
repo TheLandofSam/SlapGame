@@ -11,6 +11,11 @@ body {
   height: 100px;
 }
 
+.smaller {
+  width: 65px;
+  height: 65px;
+}
+
 .heading {
   font-size: 70px
 
