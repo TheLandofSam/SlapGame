@@ -11,7 +11,7 @@ function FlowerService() {
   function Flower(){
     this.id = 1,
     this.health = 0,
-    this.stages = ["https://farm5.staticflickr.com/4297/35328802014_952f6a688a.jpg", "https://farm5.staticflickr.com/4309/35328802094_5e147ae617.jpg", "https://farm5.staticflickr.com/4294/35359914023_effb3a45d4.jpg", "https://farm5.staticflickr.com/4325/35359914073_0c1e1b9496.jpg", "https://farm5.staticflickr.com/4325/35359914103_4ca32b4734.jpg", "https://farm5.staticflickr.com/4296/36166232225_e43c54526a.jpg", "https://farm5.staticflickr.com/4306/35359914153_dc98f61683.jpg", "https://farm5.staticflickr.com/4311/35774829740_bb62f81bc2.jpg", "https://farm5.staticflickr.com/4293/36166218945_31deb6de7c_m.jpg", "https://farm5.staticflickr.com/4297/35359908683_7898bd746c_z.jpg"],
+    this.stages = ["../assets/Grow-a-flower0B.jpeg", "../assets/Grow-a-flower1B.jpeg", "../assets/Grow-a-flower2B.jpeg", "../assets/Grow-a-flower3B.jpeg", "../assets/Grow-a-flower4B.jpeg", "../assets/Grow-a-flower5.jpeg", "../assets/Grow-a-flower6.jpeg", "../assets/zombie18.png", "../assets/GameOver.jpg", "../assets/d23088a6ac59591719725083951cd673_1st-place-blue-ribbon-clipart-blue-ribbon-clip-art_650-1171.png"],
     this.currentStage = 0
     //array: this.tools = [], update every time you are going to update the health, check tool array first and account for item.
     
