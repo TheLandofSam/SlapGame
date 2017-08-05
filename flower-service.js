@@ -11,7 +11,7 @@ function FlowerService() {
   function Flower(){
     this.id = 1,
     this.health = 0,
-    this.stages = ["../assets/Grow-a-flower0B.jpeg", "../assets/Grow-a-flower1B.jpeg", "../assets/Grow-a-flower2B.jpeg", "../assets/Grow-a-flower3B.jpeg", "../assets/Grow-a-flower4B.jpeg", "../assets/Grow-a-flower5.jpeg", "../assets/Grow-a-flower6.jpeg", "../assets/zombie18.png", "../assets/GameOver.jpg", "../assets/d23088a6ac59591719725083951cd673_1st-place-blue-ribbon-clipart-blue-ribbon-clip-art_650-1171.png"],
+    this.stages = ["./assets/Grow-a-flower0B.jpeg", "./assets/Grow-a-flower1B.jpeg", "./assets/Grow-a-flower2B.jpeg", "./assets/Grow-a-flower3B.jpeg", "./assets/Grow-a-flower4B.jpeg", "./assets/Grow-a-flower5.jpeg", "./assets/Grow-a-flower6.jpeg", "./assets/zombie18.png", "./assets/GameOver.jpg", "./assets/d23088a6ac59591719725083951cd673_1st-place-blue-ribbon-clipart-blue-ribbon-clip-art_650-1171.png"],
     this.currentStage = 0
     //array: this.tools = [], update every time you are going to update the health, check tool array first and account for item.
     
